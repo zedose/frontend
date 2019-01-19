@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Staatliches|ZCOOL+KuaiLe');
+
 .Header {
-  
+  height: 10vw;
+  text-align: center;
+  font-family: "Staatliches";
+}
+
+.Logo {
+  display: inline-block;
+  font-size: 2vw
+}
+
+.Menu {
+  display: inline-block;
+  float: right;
 }
