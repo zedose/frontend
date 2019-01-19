@@ -1,9 +1,30 @@
 .Block {
-  width: 50px;
-  height: 50px;
-  display: block;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin: 3px;
+}
+
+.BlockThumbnail{
+  width: 70px;
+  height: 70px;
   background-image:url("../images/block.png");
   background-size:cover;
+}
+
+.Block:hover {
+  width: 210px;
+  background-color: #EEE
+}
+
+.BlockDescription{
+  width: 0px;
+  display: none;
+}
+
+.Block:hover .BlockDescription{
+  width: auto;
+  display: block;
 }
 
 .block-wrapper {

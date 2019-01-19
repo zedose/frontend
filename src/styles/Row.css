@@ -1,0 +1,25 @@
+.Row {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: grey;
+  display: flex;
+  border-radius: 5px;
+}
+
+.RowContainer {
+  width: 90%;
+  margin: 5px auto;
+
+
+
+}
+
+.RowSubject {
+  text-align: left;
+
+
+}
