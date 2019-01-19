@@ -5,19 +5,14 @@ import './Block.css';
 class Block extends Component {
   render() {
     return (
-      <div className="Block">		
-		  <img src={logo} className="App-logo" alt="logo" />
-		  <a
-			href="https://youtube.com"
-			target="_blank"
-			rel="noopener noreferrer"
-		  >
-			do something
-		  </a>
-        
+      <div className="Block">
+        <a href="https://youtube.com">
+          <div className="block-wrapper">
+          </div>
+        </a>
       </div>
     );
   }
 }
 
-export default App;
+export default Block;
