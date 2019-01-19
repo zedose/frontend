@@ -5,8 +5,8 @@
 }
 
 .BlockThumbnail{
-  width: 70px;
-  height: 70px;
+  width: 20vw;
+  height: 20vw;
 }
 
 .Block:hover {
