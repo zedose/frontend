@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Block.css';
 import blockimg from "../images/block.png"
+
 class Block extends Component {
   constructor(props) {
     super(props);
@@ -17,8 +18,6 @@ class Block extends Component {
     return (
       <div className="Block" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
           {this.getThumbnail()}
-
-
          <div className="BlockDescription">
           {this.getContent()}
          </div>
@@ -28,12 +27,19 @@ class Block extends Component {
 
 
   getThumbnail() {
-    return  <a href={this.state.url}><img className="BlockThumbnail" src={blockimg}></img></a>
-
+    return (
+      <a href={this.state.url}>
+        <img className="BlockThumbnail" src={blockimg}></img>
+      </a>
+    )
   }
 
   getContent(){
-    return<div>{this.state.description}</div>
+    return (
+      <div>
+        {this.state.description}
+      </div>
+    )
   }
 
   onMouseEnter(event) {

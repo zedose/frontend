@@ -28,7 +28,8 @@ class YouTubeBlock extends Block {
                onRequestClose={this.onCloseVideoModal}
                contentLabel="Video Title">
           <div>
-          <div>Header</div><button onClick={this.onCloseVideoModal}>X</button>
+          <div>Header</div>
+          <button onClick={this.onCloseVideoModal}>X</button>
             <YouTube videoId="a7tAPh06kIg" opt={opts}/>
           </div>
         </Modal>
