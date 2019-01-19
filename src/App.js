@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Block from './Block';
+import Row from './Row';
 import Header from './Header';
 
 
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
           <Header />
-		      <Block />
+		      <Row />
       </div>
     );
   }
