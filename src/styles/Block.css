@@ -8,8 +8,6 @@
 .BlockThumbnail{
   width: 70px;
   height: 70px;
-  background-image:url("../images/block.png");
-  background-size:cover;
 }
 
 .Block:hover {
