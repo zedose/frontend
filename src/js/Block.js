@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/Block.css';
+import '../styles/Block.css';
 
 class Block extends Component {
   render() {
