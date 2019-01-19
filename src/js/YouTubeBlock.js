@@ -10,20 +10,17 @@ class YouTubeBlock extends Block {
         description: "this is a description",
         url: "http://youtube.com",
         videoActive:false,
-
     };
     this.openVideoModal = this.openVideoModal.bind(this);
     this.onCloseVideoModal = this.onCloseVideoModal.bind(this);
-
   }
 
   getThumbnail(){
     const opts = {
       playerVars: {
           autoplay: 1
-        },
-
-      }
+      },
+    }
 
     return (
       <div onClick={this.openVideoModal} className="BlockThumbnail"><div>Play</div>
@@ -34,7 +31,6 @@ class YouTubeBlock extends Block {
           <div>Header</div><button onClick={this.onCloseVideoModal}>X</button>
             <YouTube videoId="a7tAPh06kIg" opt={opts}/>
           </div>
-
         </Modal>
       </div>
     )
@@ -42,16 +38,14 @@ class YouTubeBlock extends Block {
 
   openVideoModal(){
     this.setState({
-          videoActive: true
-        });
+      videoActive: true
+    });
   }
-
-
 
   onCloseVideoModal(){
     this.setState({
-          videoActive: false
-        });
+      videoActive: false
+    });
   }
 }
 
