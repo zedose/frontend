@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Row.css';
+import '../styles/Row.css';
 
 import Block from './Block';
 
