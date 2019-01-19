@@ -9,11 +9,10 @@ class RowList extends Component {
       <div className="RowList">
         <Row/>
         <Row/>
+        <Row/>
       </div>
     );
   }
-
-
 }
 
 export default RowList;

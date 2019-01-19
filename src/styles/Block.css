@@ -1,8 +1,7 @@
 .Block {
-  width: 70px;
-  height: 70px;
+  width: 20vw;
+  height: 20vw;
   display: flex;
-  margin: 3px;
 }
 
 .BlockThumbnail{
@@ -11,12 +10,12 @@
 }
 
 .Block:hover {
-  width: 210px;
-  background-color: #EEE
+  width: 20vw;
+  background-color: #EEE;
 }
 
 .BlockDescription{
-  width: 0px;
+  width: 0;
   display: none;
 }
 
@@ -26,6 +25,6 @@
 }
 
 .block-wrapper {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
