@@ -16,13 +16,6 @@ class Block extends Component {
   render() {
     return (
       <div className="Block" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
-<<<<<<< HEAD
-        <a href="https://youtube.com">
-          <img className="BlockThumbnail">
-          </img>
-        </a>
-        <div className="BlockDescription">{this.state.description}</div>
-=======
 
           {this.getThumbnail()}
 
@@ -30,13 +23,10 @@ class Block extends Component {
          <div className="BlockDescription">
           {this.getContent()}
          </div>
->>>>>>> 22c63c8f5bf9a5c9e8fc2e99a95b0a3dff8b4877
       </div>
     );
   }
 
-<<<<<<< HEAD
-=======
   getThumbnail() {
     return  <a href={this.state.url}><img className="BlockThumbnail" src={blockimg}></img></a>
 
@@ -46,7 +36,6 @@ class Block extends Component {
     return<div>{this.state.description}</div>
   }
 
->>>>>>> 22c63c8f5bf9a5c9e8fc2e99a95b0a3dff8b4877
   onMouseEnter(event) {
     this.setState(state => ({
       xxx: 2
