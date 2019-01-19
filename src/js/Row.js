@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/Row.css';
 
 import Block from './Block';
+import YouTubeBlock from './YouTubeBlock';
 
 class Row extends Component {
   render() {
@@ -20,7 +21,7 @@ class Row extends Component {
   createBlocks() {
     let blocks = [];
     blocks.push(<Block/>);
-    blocks.push(<Block/>);
+    blocks.push(<YouTubeBlock/>);
     return blocks;
   }
 }
