@@ -22,21 +22,22 @@ class YouTubeBlock extends Block {
       playerVars: {
           autoplay: 1
         },
-      
+
       }
 
-    return <div onClick={this.openVideoModal} className="BlockThumbnail"><div>Play</div>
-      <Modal isOpen={this.state.videoActive}
-             onRequestClose={this.onCloseVideoModal}
-             contentLabel="Video Title">
-        <div>
-        <div>Header</div><button onClick={this.onCloseVideoModal}>X</button>
-          <YouTube videoId="a7tAPh06kIg"
-                  opt={opts}/>
-        </div>
+    return (
+      <div onClick={this.openVideoModal} className="BlockThumbnail"><div>Play</div>
+        <Modal isOpen={this.state.videoActive}
+               onRequestClose={this.onCloseVideoModal}
+               contentLabel="Video Title">
+          <div>
+          <div>Header</div><button onClick={this.onCloseVideoModal}>X</button>
+            <YouTube videoId="a7tAPh06kIg" opt={opts}/>
+          </div>
 
-      </Modal>
-    </div>
+        </Modal>
+      </div>
+    )
   }
 
   openVideoModal(){
