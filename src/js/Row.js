@@ -6,8 +6,13 @@ import Block from './Block';
 class Row extends Component {
   render() {
     return (
-      <div className="Row">
+      <div className="RowContainer">
+        <div className="RowSubject">
+          <h3>Subject</h3>
+        </div>
+        <div className="Row">
         { this.createBlocks() }
+        </div>
       </div>
     );
   }
