@@ -10,29 +10,29 @@ class Block extends Component {
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
   }
+
   render() {
     return (
       <div className="Block" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
         <a href="https://youtube.com">
           <img className="BlockThumbnail">
           </img>
-
         </a>
         <div className="BlockDescription">{this.state.description}</div>
-
       </div>
     );
   }
+
   onMouseEnter(event) {
     this.setState(state => ({
-          xxx: 2
-        }));
+      xxx: 2
+    }));
   }
 
   onMouseLeave(event) {
     this.setState(state => ({
-          xxx: 1
-        }));
+      xxx: 1
+    }));
   }
 }
 
