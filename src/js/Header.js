@@ -6,10 +6,10 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="Logo">
-          <h1>sedose</h1>
+          <h1>ZEDOSE</h1>
         </div>
         <div className="Menu">
-          <p>login</p>
+          <p>Login</p>
         </div>
       </div>
     );
