@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Staatliches|ZCOOL+KuaiLe');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab|Slabo+27px');
 
 .Header {
   height: 10vw;
   text-align: center;
-  font-family: "Staatliches";
+  font-family: "Merriweather";
 }
 
 .Logo {

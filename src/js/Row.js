@@ -9,7 +9,6 @@ class Row extends Component {
     return (
       <div className="RowContainer">
         <div className="RowSubject">
-          <h3>Subject</h3>
         </div>
         <div className="Row">
         { this.createBlocks() }
@@ -21,7 +20,9 @@ class Row extends Component {
   createBlocks() {
     let blocks = [];
     blocks.push(<Block/>);
-    blocks.push(<YouTubeBlock/>);
+    blocks.push(<Block/>);
+    blocks.push(<Block/>);
+    blocks.push(<Block/>);
     return blocks;
   }
 }
