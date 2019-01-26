@@ -22,10 +22,9 @@ class Block extends Component {
     return (
       <div className="Block" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
           {this.getThumbnail()}
-
-          <div className="BlockDescription" onClick={this.onClick}>
           {this.togglePopup()}
-          {this.getDescription()}
+          <div className="BlockDescription" onClick={this.onClick}>
+            {this.getDescription()}
           </div>
 
       </div>
@@ -56,7 +55,11 @@ class Block extends Component {
     return (
       <div>
       {this.state.showPopup ?
-        <Popup />
+        <Popup
+          closePopup={this.onClick}
+          content=<img src="https://images.unsplash.com/photo-1548373564-99ab96ed0dc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80" />
+          // content=<iframe width="560" height="315" src="https://www.youtube.com/embed/v8lu9ntmPJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        />
         : null
       }
       </div>

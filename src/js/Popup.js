@@ -8,10 +8,9 @@ class Popup extends Component {
 
   render() {
     return (
-      <div className='Popup'>
+      <div className='Popup' onClick={this.props.closePopup}>
         <div className='Popup-inner'>
-          <h1>{this.props.text}</h1>
-        <button onClick={this.props.closePopup}>close me</button>
+          {this.props.content}
         </div>
       </div>
     );
