@@ -8,7 +8,8 @@
 
 .Logo {
   display: inline-block;
-  font-size: 2vw
+  font-size: 2vw;
+  font-style: bold;
 }
 
 .Menu {

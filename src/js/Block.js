@@ -34,7 +34,7 @@ class Block extends Component {
   getDescription(){
     return (
       <div>
-        {this.state.description}
+        {this.props.description}
       </div>
     );
   }
@@ -57,8 +57,8 @@ class Block extends Component {
       {this.state.showPopup ?
         <Popup
           closePopup={this.onClick}
-          content=<img src="https://images.unsplash.com/photo-1548373564-99ab96ed0dc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80" />
-          // content=<iframe width="560" height="315" src="https://www.youtube.com/embed/v8lu9ntmPJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          // content=<img src="https://images.unsplash.com/photo-1548373564-99ab96ed0dc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80" />
+          content=<iframe width="720" height="405" src="https://www.youtube.com/embed/v8lu9ntmPJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         />
         : null
       }

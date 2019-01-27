@@ -19,10 +19,10 @@ class Row extends Component {
 
   createBlocks() {
     let blocks = [];
-    blocks.push(<Block/>);
-    blocks.push(<Block/>);
-    blocks.push(<Block/>);
-    blocks.push(<Block/>);
+    blocks.push(<Block description="testing"/>);
+    blocks.push(<Block description="test worked"/>);
+    blocks.push(<Block description="omfg"/>);
+    blocks.push(<Block description="this is amazing"/>);
     return blocks;
   }
 }
