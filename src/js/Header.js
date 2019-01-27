@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="Logo">
-          <h1>zedose</h1>
+          <h1><a href="index.js">zedose</a></h1>
         </div>
         <div className="Menu">
           <p>login</p>
